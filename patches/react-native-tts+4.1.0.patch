@@ -1,0 +1,19 @@
+diff --git a/node_modules/react-native-tts/android/src/main/java/net/no_mad/tts/TextToSpeechModule.java b/node_modules/react-native-tts/android/src/main/java/net/no_mad/tts/TextToSpeechModule.java
+index 6be44a4..a8d8e34 100644
+--- a/node_modules/react-native-tts/android/src/main/java/net/no_mad/tts/TextToSpeechModule.java
++++ b/node_modules/react-native-tts/android/src/main/java/net/no_mad/tts/TextToSpeechModule.java
+@@ -525,4 +525,14 @@ public class TextToSpeechModule extends ReactContextBaseJavaModule {
+                 .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
+                 .emit(eventName, params);
+     }
++
++    @ReactMethod
++    public void addListener(String eventName) {
++        // Keep: Required for RN built in Event Emitter Calls.
++    }
++
++    @ReactMethod
++    public void removeListeners(Integer count) {
++        // Keep: Required for RN built in Event Emitter Calls.
++    }
+ }

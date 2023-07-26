@@ -1,0 +1,19 @@
+diff --git a/node_modules/react-native-audio-record/android/src/main/java/com/goodatlas/audiorecord/RNAudioRecordModule.java b/node_modules/react-native-audio-record/android/src/main/java/com/goodatlas/audiorecord/RNAudioRecordModule.java
+index 11c5ad8..083a556 100644
+--- a/node_modules/react-native-audio-record/android/src/main/java/com/goodatlas/audiorecord/RNAudioRecordModule.java
++++ b/node_modules/react-native-audio-record/android/src/main/java/com/goodatlas/audiorecord/RNAudioRecordModule.java
+@@ -222,4 +222,14 @@ public class RNAudioRecordModule extends ReactContextBaseJavaModule {
+         File file = new File(tmpFile);
+         file.delete();
+     }
++
++    @ReactMethod
++    public void addListener(String eventName) {
++        // Keep: Required for RN built in Event Emitter Calls.
++    }
++
++    @ReactMethod
++    public void removeListeners(Integer count) {
++        // Keep: Required for RN built in Event Emitter Calls.
++    }
+ }

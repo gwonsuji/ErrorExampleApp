@@ -1,0 +1,19 @@
+diff --git a/node_modules/@react-native-voice/voice/android/src/main/java/com/wenkesj/voice/VoiceModule.java b/node_modules/@react-native-voice/voice/android/src/main/java/com/wenkesj/voice/VoiceModule.java
+index f22833e..5703baa 100644
+--- a/node_modules/@react-native-voice/voice/android/src/main/java/com/wenkesj/voice/VoiceModule.java
++++ b/node_modules/@react-native-voice/voice/android/src/main/java/com/wenkesj/voice/VoiceModule.java
+@@ -398,4 +398,14 @@ public class VoiceModule extends ReactContextBaseJavaModule implements Recogniti
+     }
+     return message;
+   }
++
++  @ReactMethod
++  public void addListener(String eventName) {
++    // Keep: Required for RN built in Event Emitter Calls.
++  }
++
++  @ReactMethod
++  public void removeListeners(Integer count) {
++    // Keep: Required for RN built in Event Emitter Calls.
++  }
+ }
